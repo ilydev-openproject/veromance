@@ -1,0 +1,448 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import missbb from '../images/missbb.png';
+import vCare from '../images/vcare.png';
+import testiDina from '../images/testi/testi1.jpg';
+import testiRina from '../images/testi/testi2.jpg';
+import testiMaya from '../images/testi/testi4.jpg';
+import testiSari from '../images/testi/testi3.jpg';
+import gamoraStore from '../images/gamora.png';
+import shape_02 from '../images/asset/shape2.png';
+import videoBg from '../images/asset/tg_video_bg.jpg';
+import hiddenProduct from '../images/asset/h3_banner_img.png';
+import blog1 from '../images/asset/blog1.jpg';
+import blog2 from '../images/asset/blog2.jpg';
+import blog3 from '../images/asset/blog3.jpg';
+
+const title = 'Homepage';
+---
+
+<Layout title={title}>
+    <main class="main-area fix">
+        <section class="tg-banner-area banner-bg jarallax parallax-img">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-xl-6 col-lg-6 order-0 order-lg-2">
+                        <div class="tg-banner-img text-center wow fadeInRight" data-wow-delay=".6s">
+                            <Image src={missbb} height={500} loading={'eager'} alt="Produk Veromance untuk meningkatkan kepercayaan diri" />
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-10">
+                        <div class="tg-banner-content">
+                            <h4 class="sub-title wow fadeInUp" data-wow-delay=".2s" aria-label="untuk kamu">Untuk Kamu yang Paling Berharga</h4>
+
+                            <h2 class="title wow fadeInUp" data-wow-delay=".4s" aria-label="untuk kamu">Setiap Sentuhan Jadi Lebih Berarti</h2>
+
+                            <p class="wow fadeInUp" data-wow-delay=".6s">Temukan kembali rasa percaya dirimu dengan rangkaian produk Veromance yang aman, berkualitas, dan dirancang khusus untuk kenyamanan intim Anda.</p>
+
+                            <div class="tg-banner-btn wow fadeInUp" data-wow-delay=".8s">
+                                <a href="#product" class="tg-btn" aria-label="Lihat koleksi produk Veromance">Cek Koleksinya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="tg-features-area">
+            <div class="container">
+                <div class="tg-features-inner">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6 col-sm-8 wow fadeInUp" data-wow-delay=".2s">
+                            <div class="tg-features-item">
+                                <div class="tg-features-icon">
+                                    <i class="flaticon-supplement"></i>
+                                </div>
+                                <div class="tg-features-content">
+                                    <h4 class="title" aria-label="formula">Formula Premium & Aman</h4>
+                                    <p>Semua produk kami diracik dari bahan pilihan yang teruji klinis dan aman untuk tubuh Anda.</p>
+                                    <a href="contact.html">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-8 wow fadeInUp" data-wow-delay=".4s">
+                            <div class="tg-features-item">
+                                <div class="tg-features-icon">
+                                    <i class="flaticon-whey-protein-3"></i>
+                                </div>
+                                <div class="tg-features-content">
+                                    <h4 class="title" aria-label="formula">Percaya Diri Setiap Hari</h4>
+                                    <p>Didesain untuk jadi bagian rutinitas harianmu, membantu kamu merasa lebih nyaman dengan dirimu.</p>
+                                    <a href="contact.html">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-8 wow fadeInUp" data-wow-delay=".6s">
+                            <div class="tg-features-item">
+                                <div class="tg-features-icon">
+                                    <i class="flaticon-strong-1"></i>
+                                </div>
+                                <div class="tg-features-content">
+                                    <h4 class="title" aria-label="formula">Hasil yang Berbicara</h4>
+                                    <p>Rasakan perubahan nyata yang meningkatkan kualitas dan kepuasan dalam kehidupan intim Anda.</p>
+                                    <a href="contact.html">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="ingredient" class="tg-supplement-area pt-130 pb-120">
+            <div class="tg-supplement-bg"></div>
+            <div class="container">
+                <div class="tg-supplement-inner">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 col-md-8 order-0 order-lg-2">
+                            <div class="tg-supplement-img text-end wow fadeInRight" data-wow-delay=".2s">
+                                <Image src={vCare} height={500} alt="Bahan-bahan alami produk Veromance" />
+                            </div>
+                            <div class="tg-supplement-shape">
+                                <Image src={shape_02} alt="" class="rotateme" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="tg-supplement-content mt-60 wow fadeInLeft" data-wow-delay=".2s">
+                                <div class="tg-section-title mb-25">
+                                    <span class="sub-title">Bahan Pilihan Kami</span>
+                                    <h2 class="title" aria-label="dibuat dari alam">Dibuat dari Alam, Diracik oleh Ahli</h2>
+                                </div>
+                                <p>Kami percaya kekuatan datang dari alam. Setiap produk Veromance diformulasikan dengan ekstrak tumbuhan berkualitas tinggi, bebas dari paraben dan bahan kimia berbahaya, untuk memberikan yang terbaik bagi area paling intim Anda.</p>
+                                <a href="#product" class="tg-btn view-btn">Lihat Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="tg-video-area tg-video-bg jarallax parallax-img" id="penggunaan">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-xl-7 col-lg-8">
+                        <div class="tg-video-img wow fadeInLeft" data-wow-delay=".2s">
+                            <Image src={videoBg} alt="" />
+                            <a href="https://www.youtube.com/watch?v=USeAeVaVV0k" class="play-btn popup-video" aria-label="button play"> <i class="fas fa-play"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-8">
+                        <div class="tg-video-content wow fadeInRight" data-wow-delay=".2s">
+                            <div class="tg-section-title white mb-30">
+                                <span class="sub-title">Lihat Cara Kerjanya</span>
+                                <h2 class="title white-text" aria-label="cara tepat menggunakan veromance serum">Cara Tepat Menggunakan Veromance Serum</h2>
+                            </div>
+                            <p class="info-one">Dapatkan hasil maksimal dari produk kami. Tonton video singkat ini untuk melihat langkah-langkah penggunaan yang benar agar pengalaman Anda lebih nyaman dan efektif.</p>
+                            <p class="info-two">Temukan tips dan trik eksklusif dari para ahli kami untuk meningkatkan rutinitas perawatan diri Anda.</p>
+                            <a href="#product" class="tg-btn">Beli Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="product" class="tg-shop-area pt-100 pb-60">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="tg-section-title text-center mb-60">
+                            <span class="sub-title">KOLEKSI ANDALAN KAMI</span>
+                            <h2 class="title">Temukan yang Paling Cocok Untukmu</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="tg-shop-wrapper">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6 col-sm-9">
+                            <div class="tg-shop-item text-center">
+                                <div class="tg-shop-thumb">
+                                    <span class="new" style="background-color: #ff4081; color: white;">Paling Laris</span>
+                                    <a href="shop-details.html"><Image src={missbb} height={500} alt="Miss B&B Serum" /></a>
+                                    <div class="tg-shop-action">
+                                        <a href="/" aria-label="button shop" class="action-item"><i class="far fa-heart"></i></a>
+                                        <a href="/" aria-label="button shop" class="action-item"><i class="flaticon-shopping-cart-1"></i></a>
+                                        <a href="/" aria-label="button shop" class="action-item"><i class="flaticon-search"></i></a>
+                                    </div>
+                                </div>
+                                <div class="tg-shop-content">
+                                    <div class="tg-shop-cat">
+                                        <a href="/">Perawatan Tubuh</a>
+                                    </div>
+                                    <h4 class="title"><a href="shop-details.html">Miss B&B Serum</a></h4>
+                                    <div class="tg-shop-price">Rp 250.000</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-9">
+                            <div class="tg-shop-item text-center">
+                                <div class="tg-shop-thumb">
+                                    <span class="new">Baru</span>
+                                    <a href="shop-details.html"><Image src={vCare} height={500} alt="V-Care Feminine Hygiene" /></a>
+                                    <div class="tg-shop-action">
+                                        <a href="/" aria-label="button shop" class="action-item"><i class="far fa-heart"></i></a>
+                                        <a href="/" aria-label="button shop" class="action-item"><i class="flaticon-shopping-cart-1"></i></a>
+                                        <a href="/" aria-label="button shop" class="action-item"><i class="flaticon-search"></i></a>
+                                    </div>
+                                </div>
+                                <div class="tg-shop-content">
+                                    <div class="tg-shop-cat">
+                                        <a href="/">Pembersih Kewanitaan</a>
+                                    </div>
+                                    <h4 class="title"><a href="shop-details.html">V-Care Feminine Hygiene</a></h4>
+                                    <div class="tg-shop-price">Rp 150.000</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-9">
+                            <div class="tg-shop-item text-center">
+                                <div class="tg-shop-thumb text-center" style="position: relative; background-color: #f0f0f0;">
+                                    <Image src={hiddenProduct} height={500} alt="Produk baru akan datang" class="mx-auto" style="opacity: 0.3;" />
+                                    <div class="absolute inset-0 flex items-center justify-center" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: flex; align-items: center; justify-content: center;">
+                                        <span class="text-2xl font-bold text-gray-500">SEGERA HADIR</span>
+                                    </div>
+                                </div>
+                                <div class="tg-shop-content">
+                                    <div class="tg-shop-cat">
+                                        <a href="/">Inovasi Baru</a>
+                                    </div>
+                                    <h4 class="title"><a href="/">Nantikan Produk Baru Kami</a></h4>
+                                    <div class="tg-shop-price"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="kenapa" class="tg-service-area">
+            <div class="container">
+                <div class="tg-service-inner">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="tg-section-title text-center mb-60">
+                                <span class="sub-title">KENAPA MEMILIH VEROMANCE?</span>
+                                <h2 class="title">Alasan Kami Jadi Pilihan Terbaikmu</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6 col-sm-9">
+                            <div class="tg-service-item">
+                                <div class="tg-services-count">01</div>
+                                <div class="icon">
+                                    <i class="flaticon-vitamins-1"></i>
+                                </div>
+                                <h2 class="title"><a href="/">Bahan Alami Pilihan</a></h2>
+                                <div class="tg-service-content">
+                                    <p>Kami hanya menggunakan ekstrak tumbuhan terbaik yang aman dan lembut untuk area paling sensitif sekalipun.</p>
+                                    <a href="/"><i class="fas fa-arrow-circle-right"></i>Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-9">
+                            <div class="tg-service-item">
+                                <div class="tg-services-count">02</div>
+                                <div class="icon">
+                                    <i class="flaticon-supplement"></i>
+                                </div>
+                                <h2 class="title"><a href="/">Teruji Klinis & BPOM</a></h2>
+                                <div class="tg-service-content">
+                                    <p>Semua produk telah melewati pengujian dermatologis dan terdaftar resmi di BPOM. Keamananmu adalah prioritas kami.</p>
+                                    <a href="/"><i class="fas fa-arrow-circle-right"></i>Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-9">
+                            <div class="tg-service-item">
+                                <div class="tg-services-count">03</div>
+                                <div class="icon">
+                                    <i class="flaticon-vitamins"></i>
+                                </div>
+                                <h2 class="title"><a href="/">Hasil Terlihat Nyata</a></h2>
+                                <div class="tg-service-content">
+                                    <p>Diformulasikan untuk memberikan hasil efektif yang meningkatkan rasa percaya diri dan kenyamanan Anda setiap hari.</p>
+                                    <a href="/"><i class="fas fa-arrow-circle-right"></i>Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-9">
+                            <div class="tg-service-item">
+                                <div class="tg-services-count">04</div>
+                                <div class="icon">
+                                    <i class="flaticon-protein-2"></i>
+                                </div>
+                                <h2 class="title"><a href="/">Privasi 100% Terjamin</a></h2>
+                                <div class="tg-service-content">
+                                    <p>Paketmu kami kirim dalam kemasan polos tanpa nama produk. Rahasiamu aman bersama kami.</p>
+                                    <a href="/"><i class="fas fa-arrow-circle-right"></i>Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-9">
+                            <div class="tg-service-item">
+                                <div class="tg-services-count">05</div>
+                                <div class="icon">
+                                    <i class="flaticon-tape-measure"></i>
+                                </div>
+                                <h2 class="title"><a href="/">Layanan Pelanggan 24/7</a></h2>
+                                <div class="tg-service-content">
+                                    <p>Ada pertanyaan atau butuh bantuan? Tim kami siap siaga membantumu kapan saja, siang dan malam.</p>
+                                    <a href="/"><i class="fas fa-arrow-circle-right"></i>Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-9">
+                            <div class="tg-service-item">
+                                <div class="tg-services-count">06</div>
+                                <div class="icon">
+                                    <i class="flaticon-abs-1"></i>
+                                </div>
+                                <h2 class="title"><a href="/">Tingkatkan Percaya Diri</a></h2>
+                                <div class="tg-service-content">
+                                    <p>Lebih dari sekadar produk, Veromance adalah temanmu untuk merasa lebih baik dan lebih berani menjadi diri sendiri.</p>
+                                    <a href="/"><i class="fas fa-arrow-circle-right"></i>Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="testimoni" class="tg-testimonial-area tg-testimonial-bg jarallax parallax-img">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="tg-section-title white text-center mb-60">
+                            <span class="sub-title">KATA MEREKA YANG SUDAH COBA</span>
+                            <h2 class="title white-text">Cerita Jujur dari Pelanggan Setia Kami</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xxl-10 col-xl-11">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="tg-testimonial-item">
+                                    <div class="tg-testimonial-thumb">
+                                        <Image src={testiDina} alt="Foto testimoni dari Rina" />
+                                    </div>
+                                    <div class="tg-testimonial-content">
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                        </div>
+                                        <h2 class="title">"PD Banget Sekarang!"</h2>
+                                        <p>Awalnya ragu, tapi setelah rutin pakai Miss B&B, hasilnya beneran nyata. Aset jadi lebih kencang dan berisi. Suka banget!</p>
+                                        <p class="tg-testi-avatar-info">Rina, 30 . <span>Pengguna Veromance</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="tg-testimonial-item">
+                                    <div class="tg-testimonial-thumb">
+                                        <Image src={testiMaya} alt="Foto testimoni dari Dina" />
+                                    </div>
+                                    <div class="tg-testimonial-content">
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                        </div>
+                                        <h2 class="title">"Nyaman & Bebas Khawatir"</h2>
+                                        <p>V-Care ini penyelamat banget. Seharian beraktivitas tetap terasa segar dan bersih. Gak ada lagi drama iritasi atau bau tak sedap.</p>
+                                        <p class="tg-testi-avatar-info">Dina, 27 . <span>Pelanggan Setia</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="tg-testimonial-item">
+                                    <div class="tg-testimonial-thumb">
+                                        <Image src={testiSari} alt="Foto testimoni dari Maya" />
+                                    </div>
+                                    <div class="tg-testimonial-content">
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                        </div>
+                                        <h2 class="title">"Kualitasnya Gak Bohong"</h2>
+                                        <p>Suka sama tekstur serumnya yang cepat meresap dan gak lengket. Wanginya juga lembut, bikin momen self-care jadi lebih menyenangkan.</p>
+                                        <p class="tg-testi-avatar-info">Maya, 32 . <span>Verified Buyer</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="tg-testimonial-item">
+                                    <div class="tg-testimonial-thumb">
+                                        <Image src={testiRina} alt="Foto testimoni dari Sari" />
+                                    </div>
+                                    <div class="tg-testimonial-content">
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                        </div>
+                                        <h2 class="title">"Wajib Punya Pokoknya!"</h2>
+                                        <p>Udah repurchase berkali-kali. V-Care ini lembut banget di kulit, cocok buat yang sensitif. Bikin area kewanitaan sehat terawat.</p>
+                                        <p class="tg-testi-avatar-info">Sari, 29 . <span>Pengguna V-Care</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="news" class="tg-blog-area pt-120 pb-90">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-lg-8">
+                        <div class="tg-section-title text-center mb-60">
+                            <h6 class="sub-title">TIPS & TRIK VEROMANCE</h6>
+                            <h2 class="title">Bacaan Untukmu yang Paling Berharga</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xl-4 col-lg-5 col-md-6 col-sm-9">
+                        <div class="tg-blog-post-item mb-30 wow fadeInUp" data-wow-delay=".2s">
+                            <div class="tg-blog-post-thumb">
+                                <a href="blog-details.html"><Image src={blog1} alt="Wanita merawat kulitnya" /></a>
+                                <div class="tg-blog-overlay-tag">
+                                    <a href="/" aria-label="button news">Perawatan Tubuh</a>
+                                </div>
+                            </div>
+                            <div class="tg-blog-post-content">
+                                <div class="post-date"><i class="far fa-calendar-alt"></i> 14 Juli 2025</div>
+                                <h4 class="title"><a href="blog-details.html" aria-label="button news">5 Cara Merawat Aset Berhargamu Agar Tetap Kencang</a></h4>
+                                <a href="blog-details.html" class="read-more" aria-label="button news"><span>Baca Selengkapnya</span> <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-5 col-md-6 col-sm-9">
+                        <div class="tg-blog-post-item mb-30 wow fadeInUp" data-wow-delay=".4s">
+                            <div class="tg-blog-post-thumb">
+                                <a href="blog-details.html"><Image src={blog2} alt="Sabun alami dan bunga" /></a>
+                                <div class="tg-blog-overlay-tag">
+                                    <a href="/" aria-label="button news">Kesehatan Wanita</a>
+                                </div>
+                            </div>
+                            <div class="tg-blog-post-content">
+                                <div class="post-date"><i class="far fa-calendar-alt"></i> 12 Juli 2025</div>
+                                <h4 class="title"><a href="blog-details.html" aria-label="button news">Mitos & Fakta Seputar Kebersihan Area Kewanitaan</a></h4>
+                                <a href="blog-details.html" class="read-more" aria-label="button news"><span>Baca Selengkapnya</span> <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-5 col-md-6 col-sm-9">
+                        <div class="tg-blog-post-item mb-30 wow fadeInUp" data-wow-delay=".6s">
+                            <div class="tg-blog-post-thumb">
+                                <a href="blog-details.html"><Image src={blog3} alt="Wanita tersenyum percaya diri" /></a>
+                                <div class="tg-blog-overlay-tag">
+                                    <a href="/" aria-label="button news">Gaya Hidup</a>
+                                </div>
+                            </div>
+                            <div class="tg-blog-post-content">
+                                <div class="post-date"><i class="far fa-calendar-alt"></i> 10 Juli 2025</div>
+                                <h4 class="title"><a href="blog-details.html" aria-label="button news">Membangun Percaya Diri, Mulai dari Diri Sendiri</a></h4>
+                                <a href="blog-details.html" class="read-more" aria-label="button news"><span>Baca Selengkapnya</span> <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</Layout>

@@ -1,0 +1,97 @@
+---
+import { Image } from 'astro:assets';
+import brandFoot from '../images/brandFooter.png';
+import paymentMethod from '../images/asset/card_img.png';
+---
+
+<footer class="footer-style-two">
+    <div class="footer-two-top-wrap">
+        <div class="container">
+            <div class="footer-two-widgets-wrap">
+                <div class="row justify-content-between">
+                    <div class="col-xl-3 col-lg-4 col-md-7 col-sm-9">
+                        <div class="footer-widget">
+                            <div class="footer-about">
+                                <div class="footer-logo logo">
+                                    <a href="/" aria-label="Kembali ke Halaman Utama Veromance"><Image src={brandFoot} alt="Logo Veromance" /></a>
+                                </div>
+                                <div class="footer-text">
+                                    <p>Veromance hadir untuk menemani perjalananmu menuju versi diri yang lebih percaya diri. Dibuat dari bahan terbaik, aman, dan dengan sepenuh hati.</p>
+                                </div>
+                                <div class="footer-social">
+                                    <a href="#socialmedia" aria-label="Kunjungi Instagram Veromance"><i class="fab fa-instagram"></i></a>
+                                    <a href="#socialmedia" aria-label="Kunjungi TikTok Veromance"><i class="fab fa-tiktok"></i></a>
+                                    <a href="#socialmedia" aria-label="Kunjungi Facebook Veromance"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#socialmedia" aria-label="Tonton channel YouTube Veromance"><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-5 col-sm-8">
+                        <div class="footer-widget widget_nav_menu">
+                            <h4 class="fw-title">Jelajahi</h4>
+                            <ul class="list-wrap">
+                                <li><a href="/about" aria-label="Pelajari lebih lanjut tentang kami">Tentang Kami</a></li>
+                                <li><a href="/#product" aria-label="Lihat semua produk kami">Produk Kami</a></li>
+                                <li><a href="/#news" aria-label="Baca blog dan tips terbaru">Blog & Tips</a></li>
+                                <li><a href="/contact" aria-label="Temukan cara menghubungi kami">Hubungi Kami</a></li>
+                                <li><a href="/#faq" aria-label="Lihat pertanyaan yang sering diajukan">Tanya Jawab (FAQ)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-5 col-sm-4">
+                        <div class="footer-widget widget_nav_menu">
+                            <h4 class="fw-title">Layanan</h4>
+                            <ul class="list-wrap">
+                                <li><a href="#semualayanan" aria-label="Pelajari cara memesan produk">Cara Pemesanan</a></li>
+                                <li><a href="#semualayanan" aria-label="Lakukan konfirmasi pembayaran">Konfirmasi Pembayaran</a></li>
+                                <li><a href="#semualayanan" aria-label="Baca kebijakan privasi kami">Kebijakan Privasi</a></li>
+                                <li><a href="#semualayanan" aria-label="Baca syarat dan ketentuan layanan">Syarat & Ketentuan</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-5">
+                        <div class="footer-widget">
+                            <h4 class="fw-title">Jangan Ketinggalan Info</h4>
+                            <div class="footer-newsletter-wrap">
+                                <p>Dapetin promo eksklusif & tips langsung di email kamu.</p>
+                                <form action="#">
+                                    <input type="email" placeholder="Email kamu.." required />
+                                    <button aria-label="Kirim email untuk berlangganan newsletter"><i class="fas fa-paper-plane"></i></button>
+                                </form>
+                            </div>
+                            <div class="footer-confidential-wrap mt-4">
+                                <div class="confidential-logo">
+                                    <i class="fas fa-shield-alt fa-2x text-primary"></i>
+                                </div>
+                                <div class="confidential-content">
+                                    <h4 class="con-title">Privasi Kamu No. 1</h4>
+                                    <span>Paket dikirim rapi & polos.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-wrap">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-7">
+                    <div class="copyright-text">
+                        <p>Hak Cipta © 2025 Veromance. Dibuat dengan ❤️ untukmu.</p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="flex justify-center md:justify-end">
+                        <Image src={paymentMethod} alt="Metode Pembayaran" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

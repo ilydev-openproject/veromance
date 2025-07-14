@@ -1,0 +1,83 @@
+---
+import { Image } from 'astro:assets';
+import brandLogo from '../images/brand.png';
+---
+
+<header>
+    <div id="preloader">
+        <div class="tg-cube-grid">
+            <div class="tg-cube tg-cube1"></div>
+            <div class="tg-cube tg-cube2"></div>
+            <div class="tg-cube tg-cube3"></div>
+            <div class="tg-cube tg-cube4"></div>
+            <div class="tg-cube tg-cube5"></div>
+            <div class="tg-cube tg-cube6"></div>
+            <div class="tg-cube tg-cube7"></div>
+            <div class="tg-cube tg-cube8"></div>
+            <div class="tg-cube tg-cube9"></div>
+        </div>
+    </div>
+    <button class="scroll-top scroll-to-target scroll-top-two" data-target="html" aria-label="Kembali ke atas halaman">
+        <i class="fas fa-angle-up"></i>
+    </button>
+    <header id="home">
+        <div id="header-fixed-height"></div>
+        <div id="sticky-header" class="tg-menu-area menu-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="mobile-nav-toggler" role="button" tabindex="0" aria-label="Buka menu navigasi"><i class="flaticon-layout"></i></div>
+                        <div class="menu-wrap">
+                            <nav class="menu-nav">
+                                <div class="logo">
+                                    <a href="/" aria-label="Veromance - Kembali ke Halaman Utama">
+                                        <Image src={brandLogo} loading={'eager'} alt="Logo Veromance" />
+                                    </a>
+                                </div>
+                                <div class="navbar-wrap main-menu d-none d-xl-flex">
+                                    <ul class="navigation">
+                                        <li class="active menu-item-has-children">
+                                            <a href="#home" class="section-link" aria-label="Lompat ke bagian Beranda">Beranda</a>
+                                        </li>
+                                        <li><a href="#ingredient" class="section-link" aria-label="Lompat ke bagian Bahan Produk">Bahan</a></li>
+                                        <li><a href="#penggunaan" class="section-link" aria-label="Lompat ke bagian Cara Penggunaan">Penggunaan</a></li>
+                                        <li><a href="#kenapa" class="section-link" aria-label="Lompat ke bagian Kenapa Memilih Kami">Kenapa</a></li>
+                                        <li class="menu-item-has-children">
+                                            <a href="#product" class="section-link" aria-label="Lompat ke bagian Produk">Produk</a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="#news" class="section-link" aria-label="Lompat ke bagian Artikel">Artikel</a>
+                                        </li>
+                                        <li><a href="#testimoni" aria-label="Lompat ke bagian Testimoni">Testimoni</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-btn d-none d-sm-block">
+                                    <a href="#order" class="tg-btn" aria-label="Pesan produk Veromance sekarang">Beli Sekarang</a>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-menu">
+        <nav class="menu-box">
+            <div class="close-btn" role="button" tabindex="0" aria-label="Tutup menu navigasi"><i class="fas fa-times"></i></div>
+            <div class="nav-logo">
+                <a href="/" aria-label="Veromance - Kembali ke Halaman Utama"><Image src={brandLogo} alt="Logo Veromance" /></a>
+            </div>
+            <div class="menu-outer"></div>
+            <div class="social-links">
+                <ul class="clearfix">
+                    <li><a href="#" aria-label="Kunjungi Facebook Veromance"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" aria-label="Kunjungi Twitter Veromance"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" aria-label="Kunjungi Instagram Veromance"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#" aria-label="Kunjungi LinkedIn Veromance"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#" aria-label="Tonton channel YouTube Veromance"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="menu-backdrop"></div>
+</header>
